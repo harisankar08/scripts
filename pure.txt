@@ -1,0 +1,33 @@
+module Main where
+
+import Prelude
+import Data.Foldable (fold)
+import TryPureScript
+
+main =
+    render $ fold
+      [ h1 (text "Welcome to My Projects List")
+      , h3 (text "-TALK LESS,CODE SPEAKS!")
+      
+      , h1 (text "MY WORKS")
+      , list [ link "http://csedce.zohosites.com/" (text "MY DEPARTMENT WEBSITE ") 
+               <> text ", In which students can download the question bank, study materials and other events are recorded"
+             , link "" (text "IoT - HOME AUTOMATION USING RASPBERRY PI") 
+               <> text ", A device which controls all home appliances through website as well as app (Project files in GitHub link)."
+             , link "m/" (text "My Novel SITE") 
+               <> text ", website in which i post my blogs and my e-novels"
+             , link "https://drive.google.com/open?id=0BxK2wLtMvh_-ZURuMXdhblFab1U" (text "SHOW REEL") 
+               <> text ", A show reel of short films edited by me."
+             , link "https://drive.google.com/open?id=0BxK2wLtMvh_-bXJzSGlYaEVJNkk" (text "TRIBUTE TO SOLDIERS") 
+               <> text ", A short video clip as tribute to our Indian soldiers played during our college symposium edited and launched."
+             ,link "https://drive.google.com/open?id=0BxK2wLtMvh_-d2JFc2lkX3lBRWM" (text "MY RESUME ") 
+               <> text " "
+             ]
+      ,p(text "HTML and CSS")
+      ,p(text "BOOTSTRAP")
+       ,p(text "Server side - PHP")
+      ,p(text "JAVASCRIPT")
+      ,p(text "JAVA")
+      ,p(text "DATABASE - MYSQL")
+      ]
+  
